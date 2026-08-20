@@ -1,0 +1,7 @@
+/* App-level layout wrapper for public pages */
+.page-wrap {
+  padding-top: var(--nav-h);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

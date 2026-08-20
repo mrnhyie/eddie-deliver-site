@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Navigate } from 'react-router-dom'
 import './AdminLogin.css'
 
 export default function AdminLogin() {
@@ -10,7 +10,7 @@ export default function AdminLogin() {
 
   // If already logged in, go straight to dashboard
   if (localStorage.getItem('eddie_token')) {
-    navigate('/admin/dashboard', { replace: true })
+    return <Navigate to="/admin/dashboard" replace />
   }
 
   async function handleSubmit(e) {

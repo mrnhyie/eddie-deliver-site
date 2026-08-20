@@ -84,28 +84,28 @@ export default function RestaurantPartner() {
                 <div className="form-grid-2">
                   <div className="form-group">
                     <label className="form-label" htmlFor="rp-rname">Restaurant Name *</label>
-                    <input id="rp-rname" className="form-input" placeholder="Maria's Kitchen" required value={form.restaurant_name} onChange={set('restaurant_name')} />
+                    <input id="rp-rname" className="form-input" placeholder="e.g. Buka Restaurant" required value={form.restaurant_name} onChange={set('restaurant_name')} />
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="rp-cname">Your Name *</label>
-                    <input id="rp-cname" className="form-input" placeholder="Maria García" required value={form.contact_name} onChange={set('contact_name')} />
+                    <input id="rp-cname" className="form-input" placeholder="e.g. Abena Darko" required value={form.contact_name} onChange={set('contact_name')} />
                   </div>
                 </div>
 
                 <div className="form-grid-2">
                   <div className="form-group">
                     <label className="form-label" htmlFor="rp-phone">Phone *</label>
-                    <input id="rp-phone" className="form-input" type="tel" placeholder="+1 (555) 000-0000" required value={form.phone} onChange={set('phone')} />
+                    <input id="rp-phone" className="form-input" type="tel" placeholder="+233 54 901 4359" required value={form.phone} onChange={set('phone')} />
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="rp-email">Email *</label>
-                    <input id="rp-email" className="form-input" type="email" placeholder="maria@kitchen.com" required value={form.email} onChange={set('email')} />
+                    <input id="rp-email" className="form-input" type="email" placeholder="manager@restaurant.com.gh" required value={form.email} onChange={set('email')} />
                   </div>
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="rp-location">Restaurant Location *</label>
-                  <input id="rp-location" className="form-input" placeholder="123 Main St, City, State" required value={form.location} onChange={set('location')} />
+                  <label className="form-label" htmlFor="rp-location">Restaurant Location (Ghana) *</label>
+                  <input id="rp-location" className="form-input" placeholder="e.g. 14th Street, Osu / Spintex Road, Accra" required value={form.location} onChange={set('location')} />
                 </div>
 
                 <div className="form-group">

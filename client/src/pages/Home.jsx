@@ -32,12 +32,6 @@ export default function Home() {
 
         <div className="container home-hero__content">
           <div className="home-hero__text">
-            <div className="section-eyebrow home-hero__badge">
-              <span className="live-dot" />
-              <span className="material-icons icon-sm">bolt</span>
-              <span>Fast &amp; Reliable Delivery</span>
-            </div>
-
             <h1 className="home-hero__title">
               Your neighborhood<br />
               <span className="home-hero__title-accent">delivery partner</span>
@@ -45,7 +39,7 @@ export default function Home() {
 
             <p className="home-hero__sub">
               Eddie's Delivery connects local restaurants with hungry customers. Fast deliveries,
-              personal service, and custom errands — all with zero platform commissions.
+              personal service, and custom errands — with zero platform commissions.
             </p>
 
             <div className="home-hero__actions">

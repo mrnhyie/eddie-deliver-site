@@ -9,7 +9,7 @@ export default function Footer() {
           <span className="material-icons footer__icon">delivery_dining</span>
           <div>
             <div className="footer__name">Eddie's <strong>Delivery</strong></div>
-            <p className="footer__tagline">Fast, personal, community-first delivery.</p>
+            <p className="footer__tagline">Fast, personal, community-first delivery in Ghana 🇬🇭.</p>
           </div>
         </div>
         <nav className="footer__nav">
@@ -18,14 +18,17 @@ export default function Footer() {
           <Link to="/restaurant">Restaurant Partners</Link>
         </nav>
         <div className="footer__contact">
-          <a href="tel:+15550000000">
-            <span className="material-icons icon-sm">phone</span> +1 (555) 000-0000
+          <a href="tel:+233549014359" title="Call Eddie">
+            <span className="material-icons icon-sm">phone</span> +233 54 901 4359
+          </a>
+          <a href="https://wa.me/233549014359" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" style={{ color: 'var(--lime-dark)', fontWeight: 600 }}>
+            <span className="material-icons icon-sm">chat</span> WhatsApp: +233 54 901 4359
           </a>
           <a href="mailto:eddie@eddiesdelivery.com">
             <span className="material-icons icon-sm">email</span> eddie@eddiesdelivery.com
           </a>
         </div>
-        <p className="footer__copy">© 2026 Eddie's Delivery · All rights reserved</p>
+        <p className="footer__copy">© 2026 Eddie's Delivery · Greater Accra, Ghana · All rights reserved</p>
       </div>
     </footer>
   )

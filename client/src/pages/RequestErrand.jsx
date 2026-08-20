@@ -65,27 +65,27 @@ export default function RequestErrand() {
                 <div className="form-grid-2">
                   <div className="form-group">
                     <label className="form-label" htmlFor="er-name">Full Name *</label>
-                    <input id="er-name" className="form-input" placeholder="Jane Smith" required value={form.name} onChange={set('name')} />
+                    <input id="er-name" className="form-input" placeholder="Kwame Mensah" required value={form.name} onChange={set('name')} />
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="er-phone">Phone Number *</label>
-                    <input id="er-phone" className="form-input" type="tel" placeholder="+1 (555) 000-0000" required value={form.phone} onChange={set('phone')} />
+                    <input id="er-phone" className="form-input" type="tel" placeholder="+233 54 901 4359" required value={form.phone} onChange={set('phone')} />
                   </div>
                 </div>
 
                 <div className="form-group">
                   <label className="form-label" htmlFor="er-email">Email (optional)</label>
-                  <input id="er-email" className="form-input" type="email" placeholder="jane@example.com" value={form.email} onChange={set('email')} />
+                  <input id="er-email" className="form-input" type="email" placeholder="kwame@example.com" value={form.email} onChange={set('email')} />
                 </div>
 
                 <div className="form-grid-2">
                   <div className="form-group">
-                    <label className="form-label" htmlFor="er-pickup">Pickup Location *</label>
-                    <input id="er-pickup" className="form-input" placeholder="123 Main St" required value={form.pickup} onChange={set('pickup')} />
+                    <label className="form-label" htmlFor="er-pickup">Pickup Location (Ghana) *</label>
+                    <input id="er-pickup" className="form-input" placeholder="e.g. Oxford Street, Osu, Accra" required value={form.pickup} onChange={set('pickup')} />
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="er-dropoff">Drop-off Location *</label>
-                    <input id="er-dropoff" className="form-input" placeholder="456 Oak Ave" required value={form.dropoff} onChange={set('dropoff')} />
+                    <label className="form-label" htmlFor="er-dropoff">Drop-off Location (Ghana) *</label>
+                    <input id="er-dropoff" className="form-input" placeholder="e.g. Lagos Avenue, East Legon" required value={form.dropoff} onChange={set('dropoff')} />
                   </div>
                 </div>
 

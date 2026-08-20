@@ -1,8 +1,8 @@
 import { useEffect, useState, useCallback } from 'react'
+import { apiUrl, authHeaders } from '../../api'
 
-const API = 'http://localhost:3001/api/restaurants'
-const token = () => localStorage.getItem('eddie_token')
-const authHeader = () => ({ Authorization: `Bearer ${token()}`, 'Content-Type': 'application/json' })
+const API = apiUrl('/api/restaurants')
+const authHeader = () => authHeaders()
 
 const STATUS_OPTIONS = ['New', 'Contacted', 'Partnered', 'Declined']
 const STATUS_CHIP = {

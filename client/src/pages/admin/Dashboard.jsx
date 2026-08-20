@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
+import { apiUrl, authHeaders } from '../../api'
 
 function api(path) {
-  return fetch(`http://localhost:3001/api${path}`, {
-    headers: { Authorization: `Bearer ${localStorage.getItem('eddie_token')}` },
+  return fetch(apiUrl(`/api${path}`), {
+    headers: authHeaders(),
   }).then(r => r.json())
 }
 

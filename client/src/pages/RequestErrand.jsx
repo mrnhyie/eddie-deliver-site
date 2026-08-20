@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { apiUrl } from '../api'
 
 export default function RequestErrand() {
   const [form, setForm] = useState({
@@ -16,7 +17,7 @@ export default function RequestErrand() {
     setStatus('loading')
     setErrMsg('')
     try {
-      const res = await fetch('http://localhost:3001/api/errands', {
+      const res = await fetch(apiUrl('/api/errands'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

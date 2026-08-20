@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Eddie's Delivery icon mark</title>
+  <desc>Circular ink-navy badge with a marigold-and-green route line and pin forming a motion mark.</desc>
+
+  <circle cx="100" cy="100" r="96" fill="#14181F"/>
+
+  <path d="M42,148 C70,114 66,84 104,72 C136,62 132,40 164,34"
+        fill="none" stroke="#2A2F3A" stroke-width="6" stroke-dasharray="1 16" stroke-linecap="round"/>
+
+  <circle cx="42" cy="148" r="10" fill="#1F7A5C"/>
+  <circle cx="164" cy="34" r="10" fill="#FFB020"/>
+
+  <circle r="8" fill="#FFB020">
+    <animateMotion dur="4s" repeatCount="indefinite"
+      path="M42,148 C70,114 66,84 104,72 C136,62 132,40 164,34"/>
+  </circle>
+</svg>

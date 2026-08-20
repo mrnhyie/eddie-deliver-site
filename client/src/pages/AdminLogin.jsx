@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate, Navigate } from 'react-router-dom'
+import { apiUrl } from '../api'
 import './AdminLogin.css'
 
 export default function AdminLogin() {
@@ -18,7 +19,7 @@ export default function AdminLogin() {
     setError('')
     setLoading(true)
     try {
-      const res = await fetch('http://localhost:3001/api/auth/login', {
+      const res = await fetch(apiUrl('/api/auth/login'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { apiUrl } from '../api'
 
 const SERVICE_TYPES = ['Food Delivery Only', 'Errands & Delivery', 'Both', 'Other']
 
@@ -19,7 +20,7 @@ export default function RestaurantPartner() {
     setStatus('loading')
     setErrMsg('')
     try {
-      const res = await fetch('http://localhost:3001/api/restaurants', {
+      const res = await fetch(apiUrl('/api/restaurants'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
